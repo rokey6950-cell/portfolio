@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anurag Kumar | Data Science & Full-Stack AI Application Developer</title>
+  <meta name="description" content="Portfolio of Anurag Kumar - B.Tech Data Science student, Full-Stack & AI Application Developer, Smart India Hackathon Winner. Specializing in React, Next.js, Python, OpenCV, and Claude API.">
+  <meta name="keywords" content="Anurag Kumar, Data Science, Full-Stack Developer, AI Developer, Next.js, Python, Flask, OpenCV, Smart India Hackathon, Gurugram, TechVriksh">
+  <meta name="author" content="Anurag Kumar">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anurag Kumar | Full-Stack & AI Application Developer">
+  <meta property="og:description" content="Explore projects, hackathon solutions, and full-stack AI engineering by Anurag Kumar.">
+  <meta property="og:image" content="./assets/avatar.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Interactive Neural / Particle Canvas Background -->
+  <canvas id="neural-bg" class="canvas-bg" aria-hidden="true"></canvas>
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Anurag Kumar Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Anurag</span>
+        <span class="logo-accent">.ai</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Accolades</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#terminal-section" class="nav-link nav-terminal-link">Interactive Terminal</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="sound-toggle-btn" class="icon-btn sound-btn" title="Toggle Futuristic UI SFX" aria-label="Toggle Sound Effects">
+            <svg class="icon sound-on-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <svg class="icon sound-off-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+          </button>
+          
+          <button id="print-resume-btn" class="btn btn-outline" title="Print Clean Printable Resume">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Resume</span>
+          </button>
+
+          <a href="#contact" class="btn btn-primary nav-cta">
+            <span>Get in Touch</span>
+            <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge-container">
+            <div class="pulse-indicator">
+              <span class="pulse-ring"></span>
+              <span class="pulse-dot"></span>
+            </div>
+            <span class="status-text">Available for Full-Stack & Applied AI Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm</span>
+            <span class="hero-name-gradient">Anurag Kumar</span>
+          </h1>
+
+          <div class="hero-typewriter-wrapper">
+            <span class="typewriter-prefix">I build</span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            B.Tech Data Science student at St. Andrews Institute of Technology & Management. 
+            Passionate full-stack developer engineering production web applications, OCR compliance pipelines, 
+            and intelligent agent systems powered by React, Next.js 16, Python, and the Anthropic Claude API.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View Featured Projects</span>
+              <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="#terminal-section" class="btn btn-secondary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              <span>Ask AI Terminal</span>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/rokey6950-cell" target="_blank" rel="noopener noreferrer" class="social-chip" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/anurag-kumar-b6a3753bb/" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:rokey6950@gmail.com" class="social-chip" title="Direct Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>rokey6950@gmail.com</span>
+            </a>
+            <a href="tel:7033191827" class="social-chip" title="Call Anurag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 7033191827</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-3d" id="hero-tilt-card">
+            <div class="card-glow-reflection"></div>
+            <div class="avatar-frame">
+              <img src="./assets/avatar.jpg" alt="Anurag Kumar - Full-Stack & AI Application Developer" class="avatar-img" loading="eager">
+              <div class="avatar-badge-sih">
+                <span class="badge-trophy">🏆</span>
+                <span>Smart India Hackathon Winner</span>
+              </div>
+            </div>
+
+            <div class="hero-card-info">
+              <div class="hero-card-header">
+                <div>
+                  <h3 class="hero-card-name">Anurag Kumar</h3>
+                  <p class="hero-card-sub">Data Science '29 &bull; SAITM Gurugram</p>
+                </div>
+                <span class="code-pill">Full-Stack AI</span>
+              </div>
+
+              <div class="hero-stats-grid">
+                <div class="hero-stat-box">
+                  <span class="stat-number" data-target="3">3</span>
+                  <span class="stat-label">Production Apps</span>
+                </div>
+                <div class="hero-stat-box">
+                  <span class="stat-number">1st</span>
+                  <span class="stat-label">SIH Internal Win</span>
+                </div>
+                <div class="hero-stat-box">
+                  <span class="stat-number" data-target="12">12</span>
+                  <span class="stat-label">Indian Languages AI</span>
+                </div>
+              </div>
+
+              <div class="hero-card-footer">
+                <div class="hero-tags">
+                  <span class="mini-tag">Next.js 16</span>
+                  <span class="mini-tag">Python/Flask</span>
+                  <span class="mini-tag">OpenCV/OCR</span>
+                  <span class="mini-tag">Claude API</span>
+                </div>
+                <div class="location-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>Gurugram, HR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & BENTO SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;overview /&gt;</span>
+          <h2 class="section-title">Bridging Data Science With Real-World Systems</h2>
+          <p class="section-subtitle">
+            Engineering scalable web architectures and practical AI prototypes that solve tangible compliance and civic challenges.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento 1: Professional Summary -->
+          <div class="bento-card bento-summary">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="bento-title">Professional Summary</h3>
+            <p class="bento-text">
+              B.Tech Data Science student building full-stack web applications and applied-AI prototypes. 
+              Proven hands-on experience integrating modern React and Next.js interfaces with Python/Flask backends, 
+              Anthropic Claude API agents, OCR-based document parsing pipelines, and resilient database-backed workflows. 
+              Proud team winner at an internal/college-level Smart India Hackathon round.
+            </p>
+            <div class="bento-quote">
+              "Turning deep learning & OCR algorithms into seamless, accessible web applications."
+            </div>
+          </div>
+
+          <!-- Bento 2: Core Focus Areas -->
+          <div class="bento-card bento-focus">
+            <h3 class="bento-title">Core Disciplines</h3>
+            <div class="focus-list">
+              <div class="focus-item">
+                <div class="focus-bullet">01</div>
+                <div>
+                  <strong>Applied AI & Computer Vision</strong>
+                  <p>OpenCV image preprocessing, Tesseract OCR text parsing, and Claude API prompt workflows.</p>
+                </div>
+              </div>
+              <div class="focus-item">
+                <div class="focus-bullet">02</div>
+                <div>
+                  <strong>Modern Full-Stack Engineering</strong>
+                  <p>Next.js 16, React, TypeScript, Tailwind CSS, coupled with Flask, FastAPI, and Node.js REST APIs.</p>
+                </div>
+              </div>
+              <div class="focus-item">
+                <div class="focus-bullet">03</div>
+                <div>
+                  <strong>Data Science & Analytics</strong>
+                  <p>Pandas, NumPy, interactive Recharts visualizations, and SQL/NoSQL schema modeling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: Quick Facts & Contact -->
+          <div class="bento-card bento-details">
+            <h3 class="bento-title">Quick Information</h3>
+            <ul class="details-list">
+              <li>
+                <span class="detail-key">Location:</span>
+                <span class="detail-val">Farukhnagar, Gurugram, Haryana</span>
+              </li>
+              <li>
+                <span class="detail-key">University:</span>
+                <span class="detail-val">St. Andrews Inst. of Tech & Mgmt</span>
+              </li>
+              <li>
+                <span class="detail-key">Degree:</span>
+                <span class="detail-val">B.Tech in Data Science (Class of 2029)</span>
+              </li>
+              <li>
+                <span class="detail-key">Primary Email:</span>
+                <a href="mailto:rokey6950@gmail.com" class="detail-link">rokey6950@gmail.com</a>
+              </li>
+              <li>
+                <span class="detail-key">Direct Phone:</span>
+                <a href="tel:7033191827" class="detail-link">+91 7033191827</a>
+              </li>
+              <li>
+                <span class="detail-key">Status:</span>
+                <span class="badge-status-open">Open for Internships & Projects</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bento 4: SIH Hackathon Highlight -->
+          <div class="bento-card bento-hackathon">
+            <div class="hackathon-glow-tag">Smart India Hackathon</div>
+            <h3 class="bento-title">Smart India Hackathon Winner</h3>
+            <p class="bento-text">
+              Spearheaded the <strong>LMPC Compliance Scanner</strong> team to 1st place in the internal/college-level SIH round, 
+              automating legal compliance verification on packaged items using computer vision.
+            </p>
+            <div class="hackathon-metrics">
+              <div class="metric-pill">
+                <span class="metric-num">100%</span>
+                <span class="metric-desc">Mandatory Legal Checks</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-num">Automated</span>
+                <span class="metric-desc">PDF Inspection Reports</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;tech-stack /&gt;</span>
+          <h2 class="section-title">Technical Skills & Tooling</h2>
+          <p class="section-subtitle">
+            A comprehensive breakdown of languages, frameworks, AI libraries, and developer tools from my resume.
+          </p>
+        </div>
+
+        <!-- Filter Tabs & Search -->
+        <div class="skills-filter-bar">
+          <div class="skills-tabs" id="skill-filter-tabs">
+            <button class="skill-tab active" data-category="all">All Skills</button>
+            <button class="skill-tab" data-category="languages">Languages</button>
+            <button class="skill-tab" data-category="frontend">Frontend</button>
+            <button class="skill-tab" data-category="backend">Backend & APIs</button>
+            <button class="skill-tab" data-category="ai">AI, OCR & Vision</button>
+            <button class="skill-tab" data-category="data">Data & Visualization</button>
+            <button class="skill-tab" data-category="tools">Databases & Tools</button>
+          </div>
+
+          <div class="skill-search-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="skill-search-input" placeholder="Search skills (e.g. Python, Claude API, OpenCV)..." aria-label="Search skills">
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Languages -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Language</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Python</h4>
+            <p class="skill-desc">Core language for OCR algorithms, OpenCV processing, Flask/FastAPI backends, and data science pipelines.</p>
+            <div class="skill-tags"><span class="tag">OpenCV</span><span class="tag">NumPy</span><span class="tag">Flask</span></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Language</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">JavaScript (ES6+)</h4>
+            <p class="skill-desc">Asynchronous browser runtime, DOM manipulation, Web Speech APIs, and full-stack event handling.</p>
+            <div class="skill-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Vite</span></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Language</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <h4 class="skill-name">TypeScript</h4>
+            <p class="skill-desc">Strict type safety for large-scale Next.js 16 components, API contracts, and community modules.</p>
+            <div class="skill-tags"><span class="tag">Next.js 16</span><span class="tag">Interfaces</span></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Language</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">HTML5 & CSS3</h4>
+            <p class="skill-desc">Semantic markup, responsive grid/flexbox layouts, CSS keyframes animations, and modern glassmorphism.</p>
+            <div class="skill-tags"><span class="tag">Responsive</span><span class="tag">Animations</span></div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Language</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">SQL</h4>
+            <p class="skill-desc">Relational database querying, joins, index optimization, and ORM integrations across SQLite & PostgreSQL.</p>
+            <div class="skill-tags"><span class="tag">PostgreSQL</span><span class="tag">SQLite</span></div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Frontend</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">React.js</h4>
+            <p class="skill-desc">Component-driven architecture, custom hooks, context state management, and real-time dashboard UI.</p>
+            <div class="skill-tags"><span class="tag">Hooks</span><span class="tag">Vite</span><span class="tag">State</span></div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Frontend</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">Next.js 16</h4>
+            <p class="skill-desc">Modern App Router, server-rendered components, streaming, server actions, and fast edge deployment.</p>
+            <div class="skill-tags"><span class="tag">App Router</span><span class="tag">SSR</span><span class="tag">Turbopack</span></div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Frontend</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Tailwind CSS</h4>
+            <p class="skill-desc">Utility-first styling, responsive design tokens, dark mode schemes, and high-velocity UI building.</p>
+            <div class="skill-tags"><span class="tag">TechVriksh UI</span><span class="tag">Responsive</span></div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Frontend</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Vite & Bootstrap 5</h4>
+            <p class="skill-desc">Lightning-fast HMR bundler setup with Vite, and responsive admin dashboard layouts with Bootstrap 5.</p>
+            <div class="skill-tags"><span class="tag">Vite</span><span class="tag">Bootstrap 5</span></div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Frontend</span>
+              <span class="skill-level">Working</span>
+            </div>
+            <h4 class="skill-name">Jinja2</h4>
+            <p class="skill-desc">Template engine for dynamic Python/Flask rendering, template inheritance, and secure HTML output.</p>
+            <div class="skill-tags"><span class="tag">Flask</span><span class="tag">Templating</span></div>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Backend</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Python / Flask</h4>
+            <p class="skill-desc">Lightweight microservices, blueprint routing, Flask-Login authentication, and integration with ReportLab.</p>
+            <div class="skill-tags"><span class="tag">SIH Project</span><span class="tag">Flask-Login</span></div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Backend</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <h4 class="skill-name">FastAPI & Node.js</h4>
+            <p class="skill-desc">High-performance async Python REST endpoints with Pydantic validation, plus Node.js backend services.</p>
+            <div class="skill-tags"><span class="tag">Async</span><span class="tag">Pydantic</span><span class="tag">Node</span></div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Backend</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">REST APIs & Serverless</h4>
+            <p class="skill-desc">Designing robust API contracts, serverless endpoints, rate limiting, and debugging via Postman.</p>
+            <div class="skill-tags"><span class="tag">Postman</span><span class="tag">Serverless</span></div>
+          </div>
+
+          <!-- AI, OCR & Computer Vision -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">AI & Vision</span>
+              <span class="skill-level">Specialist</span>
+            </div>
+            <h4 class="skill-name">Anthropic Claude API</h4>
+            <p class="skill-desc">End-to-end integration for AI-assisted civic communications, structured JSON outputs, and multilingual assistant.</p>
+            <div class="skill-tags"><span class="tag">GenAI</span><span class="tag">Civic Assistant</span></div>
+          </div>
+
+          <div class="skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">AI & Vision</span>
+              <span class="skill-level">Specialist</span>
+            </div>
+            <h4 class="skill-name">OpenCV & Tesseract OCR</h4>
+            <p class="skill-desc">Binarization, noise reduction, contour detection, and optical character extraction for regulatory compliance checking.</p>
+            <div class="skill-tags"><span class="tag">LMPC Scanner</span><span class="tag">SIH Winner</span></div>
+          </div>
+
+          <div class="skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">AI & Vision</span>
+              <span class="skill-level">Working</span>
+            </div>
+            <h4 class="skill-name">PyTorch</h4>
+            <p class="skill-desc">Foundational deep learning, neural network layers, tensor calculations, and model inference pipelines.</p>
+            <div class="skill-tags"><span class="tag">Deep Learning</span><span class="tag">Tensors</span></div>
+          </div>
+
+          <!-- Data & Visualization -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Data Science</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">NumPy & pandas</h4>
+            <p class="skill-desc">Tabular data manipulation, statistical profiling, feature engineering, and data cleaning pipelines.</p>
+            <div class="skill-tags"><span class="tag">Dataframes</span><span class="tag">Math</span></div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Data & 3D</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4 class="skill-name">Three.js & React Three Fiber</h4>
+            <p class="skill-desc">Interactive 3D web graphics, canvas rendering, custom geometries, and spatial interfaces.</p>
+            <div class="skill-tags"><span class="tag">3D Canvas</span><span class="tag">R3F</span></div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Data & Motion</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Recharts, Framer Motion & Lenis</h4>
+            <p class="skill-desc">Dynamic animated dashboard charts, smooth physics-based UI transitions, and buttery Lenis smooth scrolling.</p>
+            <div class="skill-tags"><span class="tag">Recharts</span><span class="tag">Motion</span><span class="tag">Lenis</span></div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Databases</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">PostgreSQL & MySQL</h4>
+            <p class="skill-desc">Relational database schemas, ACID compliance, foreign key constraints, indexing, and connection pools.</p>
+            <div class="skill-tags"><span class="tag">SQL</span><span class="tag">Migrations</span></div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Databases</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">MongoDB & SQLite</h4>
+            <p class="skill-desc">Document-based NoSQL storage for flexible schemas, paired with SQLite for embedded desktop & local prototyping.</p>
+            <div class="skill-tags"><span class="tag">NoSQL</span><span class="tag">Embedded</span></div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">Tools</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Git, GitHub & pytest</h4>
+            <p class="skill-desc">Branching workflows, PR reviews, CI/CD, automated unit testing with pytest for Python test suites.</p>
+            <div class="skill-tags"><span class="tag">CI/CD</span><span class="tag">Unit Tests</span></div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <span class="skill-badge-category">AI Engineering Tools</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4 class="skill-name">Antigravity, Codex & Claude Code</h4>
+            <p class="skill-desc">Next-generation agentic developer environments, AI pair programming workflows, and autonomous engineering tooling.</p>
+            <div class="skill-tags"><span class="tag">Agentic IDE</span><span class="tag">AI Workflows</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;work-history /&gt;</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">
+            Hands-on software engineering, community architecture, and full-stack modules.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-card">
+            <div class="timeline-badge-year">Current</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Full-Stack Developer</h3>
+                  <h4 class="company-name"><a href="https://techvriksh.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">TechVriksh</a> &bull; Student Technology Community Platform</h4>
+                </div>
+                <span class="badge-role-type">Community Core Team</span>
+              </div>
+
+              <p class="role-summary">
+                Contribute to frontend and backend development for TechVriksh, a student-driven technology community platform empowering aspiring developers, engineers, and designers.
+              </p>
+
+              <div class="role-bullet-points">
+                <div class="bullet-item">
+                  <div class="bullet-icon">⚡</div>
+                  <p><strong>Frontend & Experience Engineering:</strong> Built and refined community, team, and event-related interfaces using <strong>Next.js 16, TypeScript, and Tailwind CSS</strong> with responsive interactive layouts.</p>
+                </div>
+                <div class="bullet-item">
+                  <div class="bullet-icon">⚙️</div>
+                  <p><strong>Backend Architecture:</strong> Developed scalable server-side modules for application pipelines, hackathon registrations, admin workflows, and secure user authentication.</p>
+                </div>
+                <div class="bullet-item">
+                  <div class="bullet-icon">📬</div>
+                  <p><strong>Communications & Automation:</strong> Implemented automated contact submission handling, administrative review notifications, and transactional email functionality.</p>
+                </div>
+              </div>
+
+              <div class="role-tech-stack">
+                <span class="tech-pill">Next.js 16</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">Auth Systems</span>
+                <span class="tech-pill">Admin Workflows</span>
+                <span class="tech-pill">Email APIs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;featured-work /&gt;</span>
+          <h2 class="section-title">Key Projects & Prototypes</h2>
+          <p class="section-subtitle">
+            Real-world systems solving legal compliance, civic engagement, and community infrastructure.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          <!-- PROJECT 1: LMPC COMPLIANCE SCANNER -->
+          <article class="project-card project-card-primary" id="project-lmpc">
+            <div class="project-media">
+              <div class="media-container">
+                <img src="./assets/lmpc-scanner.jpg" alt="LMPC Compliance Scanner - Smart India Hackathon Winner" class="project-image" loading="lazy">
+                <div class="media-badge sih-badge">
+                  <span>🏆 Smart India Hackathon Winner</span>
+                </div>
+              </div>
+              <div class="project-quick-actions">
+                <button class="btn btn-sm btn-primary launch-demo-btn" data-modal="lmpc-modal">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  <span>Interactive OCR Simulator</span>
+                </button>
+                <a href="https://github.com/rokey6950-cell/lmpc-compliance-scanner" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-category">Computer Vision & Legal AI</span>
+                <span class="project-tag-pill">SIH Round Winner</span>
+              </div>
+              <h3 class="project-title">LMPC Compliance Scanner</h3>
+              <p class="project-subtitle">Automated Legal Metrology (Packaged Commodities) Rules, 2011 Verification Engine</p>
+
+              <p class="project-desc">
+                Engineered a comprehensive Python/Flask application utilizing OpenCV image preprocessing (thresholding, contour extraction, noise filtering) and Tesseract OCR to accurately capture and parse text on packaged consumer products.
+              </p>
+
+              <ul class="project-features">
+                <li><strong>Rule-Based Compliance Logic:</strong> Implemented automated checks assessing mandatory declarations (MRP, Net Quantity, Best Before, Manufacturer address) with <span class="status-chip success">COMPLIANT</span>, <span class="status-chip danger">NON_COMPLIANT</span>, or <span class="status-chip warning">NEEDS_REVIEW</span> outcomes.</li>
+                <li><strong>Label & Font Size Auditing:</strong> Detected minimum font size compliance relative to pack dimensions according to Indian statutory rules.</li>
+                <li><strong>Inspector Portal & Reporting:</strong> Built role-based access for Admins and Inspectors with full scan history and downloadable PDF inspection reports generated via ReportLab.</li>
+              </ul>
+
+              <div class="project-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">Flask</span>
+                <span class="stack-badge">OpenCV</span>
+                <span class="stack-badge">Tesseract OCR</span>
+                <span class="stack-badge">SQLite</span>
+                <span class="stack-badge">SQLAlchemy</span>
+                <span class="stack-badge">Flask-Login</span>
+                <span class="stack-badge">Bootstrap 5</span>
+                <span class="stack-badge">ReportLab</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: AI GOVERNMENT AVATAR & CIVIC PLATFORM -->
+          <article class="project-card" id="project-civic">
+            <div class="project-media">
+              <div class="media-container">
+                <img src="./assets/civic-avatar.jpg" alt="AI Government Avatar and Civic Communication Platform" class="project-image" loading="lazy">
+                <div class="media-badge live-badge">
+                  <span>⚡ AI Live Prototype</span>
+                </div>
+              </div>
+              <div class="project-quick-actions">
+                <button class="btn btn-sm btn-primary launch-demo-btn" data-modal="civic-modal">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                  <span>Interactive Speech & Avatar Demo</span>
+                </button>
+                <a href="https://gov-platform.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Website</span>
+                </a>
+                <a href="https://github.com/rokey6950-cell/gov-platform" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-category">GenAI & Civic Tech</span>
+                <span class="project-tag-pill">Claude API & 12 Indian Languages</span>
+              </div>
+              <h3 class="project-title">AI Government Avatar & Civic Communication Platform</h3>
+              <p class="project-subtitle">Multilingual Public Communication, Broadcasts & AI Spokesperson Interface</p>
+
+              <p class="project-desc">
+                Architected a modern React application providing municipal and civic authorities with centralized broadcast management, sentiment analytics, and automated governance audit logs powered by the Anthropic Claude API.
+              </p>
+
+              <ul class="project-features">
+                <li><strong>Claude API Integration:</strong> End-to-end LLM orchestration for generating clear, legally vetted public service announcements and responding to citizen inquiries.</li>
+                <li><strong>12 Indian Languages Translate & Speak:</strong> Developed an AI presenter avatar with synchronous audio playback, translating civic notices across Hindi, Bengali, Telugu, Tamil, Marathi, and more.</li>
+                <li><strong>Auditing & Analytics:</strong> Integrated Recharts analytics dashboards for citizen feedback trends and Framer Motion for interactive presentation.</li>
+              </ul>
+
+              <div class="project-stack">
+                <span class="stack-badge">React</span>
+                <span class="stack-badge">JavaScript</span>
+                <span class="stack-badge">Vite</span>
+                <span class="stack-badge">Anthropic Claude API</span>
+                <span class="stack-badge">Recharts</span>
+                <span class="stack-badge">Framer Motion</span>
+                <span class="stack-badge">Speech Synthesis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: TECHVRIKSH PLATFORM -->
+          <article class="project-card" id="project-techvriksh">
+            <div class="project-media">
+              <div class="techvriksh-visual-preview">
+                <div class="cyber-grid-overlay"></div>
+                <div class="techvriksh-3d-scene">
+                  <div class="techvriksh-cube">
+                    <div class="cube-face cube-front">TechVriksh</div>
+                    <div class="cube-face cube-back">Next.js 16</div>
+                    <div class="cube-face cube-right">Three.js</div>
+                    <div class="cube-face cube-left">Tailwind</div>
+                    <div class="cube-face cube-top">R3F</div>
+                    <div class="cube-face cube-bottom">Community</div>
+                  </div>
+                </div>
+                <div class="media-badge">
+                  <span>🚀 Live Community Hub</span>
+                </div>
+              </div>
+              <div class="project-quick-actions">
+                <button class="btn btn-sm btn-primary launch-demo-btn" data-modal="techvriksh-modal">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Explore Architecture</span>
+                </button>
+                <a href="https://techvriksh.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Platform</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-category">Modern Web & 3D Immersion</span>
+                <span class="project-tag-pill">Community Engine</span>
+              </div>
+              <h3 class="project-title">TechVriksh — Student Technology Community Platform</h3>
+              <p class="project-subtitle">Interactive 3D Community Portal, Event Ticketing & Member Onboarding</p>
+
+              <p class="project-desc">
+                Contributed to building the flagship community website featuring member profiles, hackathons showcase, event registrations, and community onboarding powered by Next.js 16 and Three.js.
+              </p>
+
+              <ul class="project-features">
+                <li><strong>Next.js 16 & React Three Fiber:</strong> Integrated 3D interactive graphics, physics-inspired Lenis smooth scrolling, and dynamic event feeds.</li>
+                <li><strong>Full-Stack Scope:</strong> Implemented backend routes for hackathon applications, event management, administrative permissions, secure auth, contact routing, and email notifications.</li>
+                <li><strong>Performant Design:</strong> Scaled with TypeScript and Tailwind CSS for mobile and desktop screens.</li>
+              </ul>
+
+              <div class="project-stack">
+                <span class="stack-badge">Next.js 16</span>
+                <span class="stack-badge">TypeScript</span>
+                <span class="stack-badge">Tailwind CSS</span>
+                <span class="stack-badge">Three.js</span>
+                <span class="stack-badge">React Three Fiber</span>
+                <span class="stack-badge">Lenis</span>
+                <span class="stack-badge">Node.js</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & ACCOLADES SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;honors /&gt;</span>
+          <h2 class="section-title">Achievements & Training</h2>
+          <p class="section-subtitle">
+            Hackathon victories, national event selections, and certified AI proficiencies.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card winner-card">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-content">
+              <span class="achievement-badge gold">1st Place Winner</span>
+              <h3 class="achievement-title">Smart India Hackathon (SIH)</h3>
+              <p class="achievement-subtitle">Internal / College-Level Round</p>
+              <p class="achievement-desc">
+                Awarded Team Winner for conceptualizing, coding, and presenting the <strong>LMPC Compliance Scanner</strong>, solving automated packaging legal verification with OpenCV & Tesseract OCR.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <div class="achievement-content">
+              <span class="achievement-badge rank">5th Position</span>
+              <h3 class="achievement-title">HIRT University Hackathon</h3>
+              <p class="achievement-subtitle">Inter-University Innovation Challenge</p>
+              <p class="achievement-desc">
+                Secured 5th position among competitive university teams, demonstrating rapid prototyping, technical presentation, and problem solving under tight hackathon deadlines.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏛️</div>
+            <div class="achievement-content">
+              <span class="achievement-badge national">National Selection</span>
+              <h3 class="achievement-title">Bharat Mandapam Hackathon</h3>
+              <p class="achievement-subtitle">New Delhi Innovation Showcase</p>
+              <p class="achievement-desc">
+                Selected to participate at the prestigious Bharat Mandapam Hackathon in New Delhi, recognized for high-potential engineering concepts and practical AI integration.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">📜</div>
+            <div class="achievement-content">
+              <span class="achievement-badge cert">Certified Training</span>
+              <h3 class="achievement-title">BE10X — AI Tools Training</h3>
+              <p class="achievement-subtitle">Industry Productivity Certification</p>
+              <p class="achievement-desc">
+                Completed comprehensive training and obtained certification in cutting-edge AI tools, generative prompt engineering, and modern automated developer workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;academics /&gt;</span>
+          <h2 class="section-title">Education & Foundation</h2>
+          <p class="section-subtitle">
+            Academic milestones shaping analytical and computational rigor.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card current-edu">
+            <div class="edu-timeline-dot"></div>
+            <div class="edu-badge">Expected 2029</div>
+            <h3 class="edu-degree">B.Tech in Data Science</h3>
+            <h4 class="edu-institution">St. Andrews Institute of Technology and Management (SAITM)</h4>
+            <p class="edu-location">Gurugram, Haryana</p>
+            <p class="edu-desc">
+              Focusing on Data Structures & Algorithms, Computer Vision, Machine Learning, Applied Statistics, Relational & Distributed Databases, and Full-Stack Web Architecture.
+            </p>
+            <div class="edu-tags">
+              <span>Data Science</span>
+              <span>Machine Learning</span>
+              <span>Algorithms</span>
+              <span>Full-Stack</span>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="edu-timeline-dot"></div>
+            <div class="edu-badge">Completed</div>
+            <h3 class="edu-degree">Class XII (Senior Secondary)</h3>
+            <h4 class="edu-institution">Patliputra Central School</h4>
+            <p class="edu-location">CBSE Board</p>
+            <p class="edu-desc">
+              Rigorous coursework in Science with Mathematics, Physics, and Chemistry, laying mathematical groundwork for algorithmic thinking and computer science.
+            </p>
+          </div>
+
+          <div class="education-card">
+            <div class="edu-timeline-dot"></div>
+            <div class="edu-badge">Completed</div>
+            <h3 class="edu-degree">Class X (Secondary Education)</h3>
+            <h4 class="edu-institution">DAV Public School</h4>
+            <p class="edu-location">CBSE Board</p>
+            <p class="edu-desc">
+              Comprehensive foundational education, strong emphasis on science, analytical reasoning, and extracurricular problem-solving activities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION -->
+    <section class="section terminal-section" id="terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;interactive /&gt;</span>
+          <h2 class="section-title">Interactive Developer Terminal & AI Query</h2>
+          <p class="section-subtitle">
+            Ask questions about Anurag's skills, run commands, or test simulated project endpoints directly in your browser.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="btn-circle red"></span>
+              <span class="btn-circle yellow"></span>
+              <span class="btn-circle green"></span>
+            </div>
+            <div class="terminal-title">anurag@devbox:~ (Interactive Portfolio Shell v2.4)</div>
+            <div class="terminal-actions">
+              <button id="clear-term-btn" class="term-action-btn">Clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output">
+            <div class="term-line output system-welcome">
+              <span class="accent-text">Welcome to Anurag Kumar's Developer Terminal!</span><br>
+              Type <span class="term-code">help</span> to view available commands, or click any quick command below.
+            </div>
+            <div class="term-line output">
+              <span class="prompt-user">guest@anurag-portfolio</span>:<span class="prompt-path">~</span>$ <span class="cmd-text">summary</span><br>
+              <span class="dimmed-text">&gt; B.Tech Data Science student @ SAITM Gurugram | Full-Stack & AI Developer | SIH Winner | TechVriksh Core Team</span>
+            </div>
+          </div>
+
+          <!-- Quick Suggestion Buttons -->
+          <div class="terminal-quick-prompts">
+            <span class="quick-label">Try commands:</span>
+            <button class="quick-cmd-btn" data-cmd="skills">skills</button>
+            <button class="quick-cmd-btn" data-cmd="projects">projects</button>
+            <button class="quick-cmd-btn" data-cmd="sih">sih</button>
+            <button class="quick-cmd-btn" data-cmd="contact">contact</button>
+            <button class="quick-cmd-btn" data-cmd="techvriksh">techvriksh</button>
+            <button class="quick-cmd-btn" data-cmd="hire">hire</button>
+            <button class="quick-cmd-btn" data-cmd="help">help</button>
+          </div>
+
+          <form id="terminal-form" class="terminal-input-row">
+            <span class="prompt-user">visitor@anurag</span>:<span class="prompt-path">~</span>$&nbsp;
+            <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (help, skills, projects, contact, clear)..." aria-label="Terminal Input">
+            <button type="submit" class="terminal-submit-btn">Run</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;get-in-touch /&gt;</span>
+          <h2 class="section-title">Let's Build Something Remarkable</h2>
+          <p class="section-subtitle">
+            Whether you have an internship opportunity, an AI project, or want to collaborate on next-gen tech—let's connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Direct Information</h3>
+            <p class="contact-card-text">
+              I am actively seeking software engineering internships, AI/ML developer roles, and hackathon collaborations. Feel free to reach out directly:
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Email</span>
+                  <a href="mailto:rokey6950@gmail.com" class="channel-link">rokey6950@gmail.com</a>
+                  <button class="copy-btn" data-copy="rokey6950@gmail.com" title="Copy email">Copy</button>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Phone</span>
+                  <a href="tel:7033191827" class="channel-link">+91 7033191827</a>
+                  <button class="copy-btn" data-copy="7033191827" title="Copy phone number">Copy</button>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-text">Farukhnagar, Gurugram, Haryana, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials-row">
+              <a href="https://github.com/rokey6950-cell" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/anurag-kumar-b6a3753bb/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-card">
+            <h3 class="contact-card-title">Send a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required placeholder="Internship Opportunity / AI Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Anurag, I was impressed by your SIH winning LMPC Scanner project and wanted to discuss..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                <span>Send Message</span>
+                <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Anurag</span>
+          <span class="logo-accent">.ai</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Data Science Student &bull; Full-Stack & Applied AI Developer</p>
+      </div>
+
+      <div class="footer-center">
+        <p>&copy; 2026 Anurag Kumar. Built with high-performance Vanilla Web Tech & CSS Glassmorphism.</p>
+        <p class="footer-subtext">Farukhnagar, Gurugram, Haryana &bull; SAITM Class of 2029</p>
+      </div>
+
+      <div class="footer-right">
+        <button id="back-to-top-btn" class="back-to-top" title="Back to top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: LMPC COMPLIANCE SCANNER INTERACTIVE SIMULATOR -->
+  <div class="modal-backdrop" id="lmpc-modal" role="dialog" aria-hidden="true" aria-labelledby="lmpc-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">Smart India Hackathon Project</span>
+          <h3 id="lmpc-modal-title" class="modal-title">LMPC Compliance Scanner — Live Demo Simulator</h3>
+        </div>
+        <button class="modal-close-btn" data-close="lmpc-modal" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-lead">
+          Test the automated rule-checking logic for packaged items under the <strong>Legal Metrology (Packaged Commodities) Rules, 2011</strong>.
+        </p>
+
+        <div class="simulator-layout">
+          <div class="sim-left">
+            <h4 class="sim-sub">Select Sample Packaged Product:</h4>
+            <div class="sample-pack-selector">
+              <button class="sample-btn active" data-sample="oatmeal">
+                <span class="sample-name">Organic Rolled Oats (454g)</span>
+                <span class="sample-status tag-pass">Fully Compliant</span>
+              </button>
+              <button class="sample-btn" data-sample="chips">
+                <span class="sample-name">Artisan Potato Chips (95g)</span>
+                <span class="sample-status tag-fail">Missing Net Wt Font Size</span>
+              </button>
+              <button class="sample-btn" data-sample="cookie">
+                <span class="sample-name">Imported Choco Cookies</span>
+                <span class="sample-status tag-review">Needs Review (Importer MRP)</span>
+              </button>
+            </div>
+
+            <div class="sim-label-preview">
+              <div class="label-box" id="sim-product-display">
+                <div class="label-header-mock">ORGANIC HARVEST OATMEAL</div>
+                <div class="label-row-mock"><span>Net Wt:</span> <strong>454 g (1.0 lb)</strong> <span class="font-tag">Font: 4.2mm (Req &gt; 4.0mm)</span></div>
+                <div class="label-row-mock"><span>MRP:</span> <strong>₹ 249.00</strong> (Incl. of all taxes)</div>
+                <div class="label-row-mock"><span>Mfg Date:</span> <strong>08/2026</strong> | <span>Exp:</span> <strong>08/2027</strong></div>
+                <div class="label-row-mock"><span>Manufacturer:</span> Organic Valley Ltd, Sector 18, Gurugram</div>
+                <div class="label-row-mock"><span>Consumer Care:</span> care@organicharvest.in / 1800-425-9988</div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="run-ocr-btn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Run OpenCV & Tesseract Rule Audit</span>
+            </button>
+          </div>
+
+          <div class="sim-right">
+            <h4 class="sim-sub">Compliance Engine Output:</h4>
+            <div class="ocr-audit-results" id="ocr-audit-results">
+              <div class="overall-status-banner status-pass">
+                <span class="banner-icon">✔</span>
+                <div>
+                  <div class="banner-title">COMPLIANT (100% Passed)</div>
+                  <div class="banner-sub">Meets all Legal Metrology Act 2011 mandates</div>
+                </div>
+              </div>
+
+              <div class="check-items-list" id="sim-checks-list">
+                <div class="check-row pass">
+                  <span class="check-icon">✓</span>
+                  <span class="check-name">Net Weight Declaration</span>
+                  <span class="check-detail">454 g detected (Font &gt; 4.0mm)</span>
+                </div>
+                <div class="check-row pass">
+                  <span class="check-icon">✓</span>
+                  <span class="check-name">Maximum Retail Price (MRP)</span>
+                  <span class="check-detail">₹ 249.00 (Incl. of all taxes present)</span>
+                </div>
+                <div class="check-row pass">
+                  <span class="check-icon">✓</span>
+                  <span class="check-name">Manufacturer / Packer Identity</span>
+                  <span class="check-detail">Full address & name detected</span>
+                </div>
+                <div class="check-row pass">
+                  <span class="check-icon">✓</span>
+                  <span class="check-name">Month & Year of Manufacture</span>
+                  <span class="check-detail">08/2026 format valid</span>
+                </div>
+                <div class="check-row pass">
+                  <span class="check-icon">✓</span>
+                  <span class="check-name">Consumer Grievance Redressal</span>
+                  <span class="check-detail">Phone & email verified</span>
+                </div>
+              </div>
+
+              <div class="sim-actions-footer">
+                <button class="btn btn-sm btn-outline" id="sim-pdf-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  <span>Download Sample Inspection Report</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: CIVIC AVATAR & MULTILINGUAL SPEECH DEMO -->
+  <div class="modal-backdrop" id="civic-modal" role="dialog" aria-hidden="true" aria-labelledby="civic-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">Civic Tech Prototype</span>
+          <h3 id="civic-modal-title" class="modal-title">AI Civic Avatar & Multilingual Announcer Demo</h3>
+        </div>
+        <button class="modal-close-btn" data-close="civic-modal" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-lead">
+          Experience the multilingual speech synthesis and Anthropic Claude-assisted broadcast workflow built for civic authorities across 12 Indian languages.
+        </p>
+
+        <div class="civic-sim-grid">
+          <div class="civic-avatar-card">
+            <div class="avatar-interactive-circle" id="civic-avatar-circle">
+              <div class="sound-wave-rings">
+                <span></span><span></span><span></span>
+              </div>
+              <img src="./assets/avatar.jpg" alt="AI Civic Assistant" class="civic-face-img">
+              <div class="speaking-indicator" id="speaking-badge">Idle</div>
+            </div>
+
+            <div class="language-picker-wrap">
+              <label for="civic-lang-select" class="picker-label">Choose Indian Language:</label>
+              <select id="civic-lang-select" class="form-select">
+                <option value="en-IN">English (India)</option>
+                <option value="hi-IN" selected>Hindi (हिन्दी)</option>
+                <option value="bn-IN">Bengali (বাংলা)</option>
+                <option value="te-IN">Telugu (తెలుగు)</option>
+                <option value="ta-IN">Tamil (தமிழ்)</option>
+                <option value="mr-IN">Marathi (मराठी)</option>
+                <option value="gu-IN">Gujarati (ગુજરાતી)</option>
+                <option value="kn-IN">Kannada (ಕನ್ನಡ)</option>
+                <option value="ml-IN">Malayalam (മലയാളം)</option>
+                <option value="pa-IN">Punjabi (ਪੰਜਾਬੀ)</option>
+                <option value="or-IN">Odia (ଓଡ଼ିଆ)</option>
+                <option value="ur-IN">Urdu (اردو)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="civic-broadcast-content">
+            <h4 class="sim-sub">Broadcast Notice:</h4>
+            <div class="civic-notice-box" id="civic-notice-text">
+              "नागरिकों को सूचित किया जाता है कि कल सुबह 8 बजे से 11 बजे तक सेक्टर 14 में जल आपूर्ति पाइपलाइन रखरखाव कार्य रहेगा। कृपया आवश्यक जल संचय करें।"
+            </div>
+
+            <div class="civic-controls">
+              <button class="btn btn-primary" id="civic-speak-btn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                <span>Translate & Speak Notice</span>
+              </button>
+              <button class="btn btn-secondary" id="civic-stop-btn">
+                <span>Stop Speech</span>
+              </button>
+            </div>
+
+            <div class="civic-tech-notes">
+              <strong>Technical Stack:</strong> React UI, Web Speech API synthesis, Anthropic Claude API backend prompt orchestration for civic summarization, and Recharts sentiment tracking.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: TECHVRIKSH COMMUNITY ARCHITECTURE -->
+  <div class="modal-backdrop" id="techvriksh-modal" role="dialog" aria-hidden="true" aria-labelledby="techvriksh-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">Student Tech Platform</span>
+          <h3 id="techvriksh-modal-title" class="modal-title">TechVriksh Architecture & Modules</h3>
+        </div>
+        <button class="modal-close-btn" data-close="techvriksh-modal" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="techvriksh-arch-grid">
+          <div class="arch-box">
+            <h4>Frontend Layer</h4>
+            <p>Next.js 16 App Router with server components, TypeScript strict typings, Tailwind CSS responsive layouts, Three.js 3D hero scene, and Lenis smooth scrolling engine.</p>
+          </div>
+          <div class="arch-box">
+            <h4>Authentication & Roles</h4>
+            <p>Multi-tier role management for core leaders, student members, and hackathon judges with protected dashboard routes and session validation.</p>
+          </div>
+          <div class="arch-box">
+            <h4>Event & Hackathon Engine</h4>
+            <p>Registration pipelines, team formation workflows, automated confirmation emails, and real-time announcements.</p>
+          </div>
+          <div class="arch-box">
+            <h4>Admin Workflows</h4>
+            <p>Moderation queue for application submissions, contact inquiries, attendance tracking, and certificate generation hooks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- PRINTABLE RESUME (Hidden on screen, shown in print) -->
+  <div class="printable-resume-sheet" id="printable-resume" aria-hidden="true">
+    <div class="resume-sheet-header">
+      <h1 class="print-name">ANURAG KUMAR</h1>
+      <p class="print-title">DATA SCIENCE STUDENT | FULL-STACK &amp; AI APPLICATION DEVELOPER</p>
+      <p class="print-contact">Farukhnagar, Gurugram, Haryana | 7033191827 | rokey6950@gmail.com | <a href="https://github.com/rokey6950-cell" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/anurag-kumar-b6a3753bb/" target="_blank">LinkedIn</a></p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-heading">PROFESSIONAL SUMMARY</h2>
+      <p class="print-body">
+        B.Tech Data Science student building full-stack web applications and applied-AI prototypes. Experience with React/Next.js interfaces, backend/API integration, Claude API, Python/Flask, OCR-based document analysis, and database-backed workflows. Team winner at an internal/college-level Smart India Hackathon round.
+      </p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-heading">TECHNICAL SKILLS</h2>
+      <p class="print-body"><strong>Languages:</strong> Python, JavaScript, TypeScript, HTML5, CSS3, SQL</p>
+      <p class="print-body"><strong>Frontend:</strong> React, Next.js 16, Tailwind CSS, Vite, Bootstrap 5, Jinja2</p>
+      <p class="print-body"><strong>Backend &amp; APIs:</strong> Node.js, Flask, FastAPI, REST APIs, serverless API routes, Postman</p>
+      <p class="print-body"><strong>AI, OCR &amp; Computer Vision:</strong> Anthropic Claude API, Tesseract OCR, OpenCV, PyTorch</p>
+      <p class="print-body"><strong>Data &amp; Visualization:</strong> NumPy, pandas, Recharts, Three.js, React Three Fiber, Framer Motion, Lenis</p>
+      <p class="print-body"><strong>Databases &amp; Tools:</strong> PostgreSQL, MySQL, MongoDB, SQLite, SQLAlchemy, Git, GitHub, pytest, VS Code, Antigravity, Codex, Claude Code</p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-heading">EXPERIENCE</h2>
+      <div class="print-item">
+        <div class="print-item-header">
+          <strong><a href="https://techvriksh.vercel.app/" target="_blank">TechVriksh</a> | Full-Stack Developer</strong>
+        </div>
+        <ul class="print-bullets">
+          <li>Contribute to frontend and backend development for TechVriksh, a student-driven technology community platform.</li>
+          <li>Build and refine community, team, and event-related interfaces with Next.js 16, TypeScript, and Tailwind CSS.</li>
+          <li>Work on backend modules for applications, events, admin workflows, authentication, contact submissions, and email functionality.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-heading">PROJECTS</h2>
+      <div class="print-item">
+        <strong>LMPC Compliance Scanner — Smart India Hackathon Project | <a href="https://github.com/rokey6950-cell/lmpc-compliance-scanner" target="_blank">GitHub</a></strong>
+        <ul class="print-bullets">
+          <li>Built a Python/Flask application using OpenCV preprocessing and Tesseract OCR to extract text from packaged-product labels.</li>
+          <li>Implemented rule-based checks for key declarations under India's Legal Metrology (Packaged Commodities) Rules, 2011, with COMPLIANT / NON_COMPLIANT / NEEDS_REVIEW outcomes.</li>
+          <li>Added label/font-size checks, searchable scan history, Admin/Inspector access, and downloadable PDF inspection reports.</li>
+          <li>Stack: Python, Flask, OpenCV, Tesseract OCR, SQLite, SQLAlchemy, Flask-Login, Bootstrap 5, ReportLab.</li>
+        </ul>
+      </div>
+
+      <div class="print-item">
+        <strong>AI Government Avatar &amp; Civic Communication Platform | <a href="https://github.com/rokey6950-cell/gov-platform" target="_blank">GitHub</a> &bull; <a href="https://gov-platform.vercel.app/" target="_blank">Live Platform</a></strong>
+        <ul class="print-bullets">
+          <li>Built a React-based civic communication prototype with dashboard, broadcast-management, analytics, and governance/audit views.</li>
+          <li>Integrated the Anthropic Claude API end-to-end for AI-assisted civic communication flows.</li>
+          <li>Developed an AI civic assistant and presenter-avatar interface with multilingual translate-and-speak options for 12 Indian languages.</li>
+          <li>Stack: React, JavaScript, Vite, Anthropic Claude API, Recharts, Framer Motion, browser speech APIs.</li>
+        </ul>
+      </div>
+
+      <div class="print-item">
+        <strong>TechVriksh — Student Technology Community Platform | <a href="https://techvriksh.vercel.app/" target="_blank">Live Platform</a></strong>
+        <ul class="print-bullets">
+          <li>Contribute to a community website featuring team profiles, events, hackathons, and community onboarding.</li>
+          <li>Work with Next.js 16, TypeScript, Tailwind CSS, Three.js, React Three Fiber, and Lenis; backend scope includes applications, events, admin, authentication, contact, and email modules.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-heading">EDUCATION</h2>
+      <p class="print-body"><strong>B.Tech in Data Science</strong> — St. Andrews Institute of Technology and Management | Expected 2029</p>
+      <p class="print-body"><strong>Class XII (CBSE)</strong> — Patliputra Central School</p>
+      <p class="print-body"><strong>Class X (CBSE)</strong> — DAV Public School</p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-heading">ACHIEVEMENTS &amp; TRAINING</h2>
+      <ul class="print-bullets">
+        <li><strong>Team Winner</strong> — internal/college-level Smart India Hackathon round, with the LMPC Compliance Scanner project.</li>
+        <li><strong>5th Position</strong> — HIRT University Hackathon.</li>
+        <li><strong>Selected</strong> for Bharat Mandapam Hackathon.</li>
+        <li><strong>BE10X</strong> — AI tools training/certificate.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
