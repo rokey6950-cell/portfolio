@@ -1395,6 +1395,11 @@ img {
   color: var(--primary);
 }
 
+.community-badge {
+  border-color: rgba(16, 185, 129, 0.5);
+  color: #34d399;
+}
+
 .project-quick-actions {
   display: flex;
   gap: 12px;
@@ -2567,6 +2572,22 @@ img {
 }
 
 /* TechVriksh Arch Grid */
+.modal-preview-banner {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.modal-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .techvriksh-arch-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

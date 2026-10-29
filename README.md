@@ -65,7 +65,8 @@ anurag-kumar-portfolio/
 └── assets/
     ├── avatar.jpg          # Developer profile avatar
     ├── lmpc-scanner.jpg    # LMPC Compliance Scanner preview
-    └── civic-avatar.jpg    # AI Gov Avatar preview
+    ├── civic-avatar.jpg    # AI Gov Avatar preview
+    └── tech-vriksh.png     # TechVriksh community platform preview
 ```
 
 ---
