@@ -84,10 +84,12 @@ anurag-kumar-portfolio/
 - Converts government announcements into speech in 10+ Indian languages
 - Tech: Python, TTS, NLP, React
 
-### 🌱 [TechVriksh](https://techvriksh.vercel.app/)
-> Developer community platform for tech events, hackathons, and collaboration.
-- Full-stack platform with event listings and developer profiles
-- Tech: React, Node.js, MongoDB
+### 🌳 [TechVriksh](https://techvriksh.vercel.app/) &bull; [GitHub](https://github.com/rokey6950-cell/Tech-Vriksh)
+> Student technology community platform powering 1,000+ builders across 18 Indian states.
+- Role: **Tech & Operations Lead** (Architecture, technical infrastructure & operations)
+- Features: WebGL 3D spatial corridor, Perplexity AI agent with real-time citations, Leaflet India builder map
+- Flagship Venue Partners: OpsTree Global (Noida), Unstop Office (Saket, New Delhi)
+- Tech: Next.js 16 (Turbopack), React 19, TypeScript, Perplexity AI SDK, Three.js, React Three Fiber, Leaflet, Lenis, GSAP, Tailwind CSS
 
 ---
 

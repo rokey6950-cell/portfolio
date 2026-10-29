@@ -441,8 +441,8 @@
 • <span class="dimmed-text">Languages:</span> Python, JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL
 • <span class="dimmed-text">Frontend:</span> React, Next.js 16, Tailwind CSS, Vite, Bootstrap 5, Jinja2
 • <span class="dimmed-text">Backend & APIs:</span> Node.js, Flask, FastAPI, REST APIs, serverless API routes, Postman
-• <span class="dimmed-text">AI, OCR & Vision:</span> Anthropic Claude API, Tesseract OCR, OpenCV, PyTorch
-• <span class="dimmed-text">Data & Viz:</span> NumPy, pandas, Recharts, Three.js, React Three Fiber, Framer Motion, Lenis
+• <span class="dimmed-text">AI, OCR & Vision:</span> Anthropic Claude API, Perplexity AI API, Tesseract OCR, OpenCV, PyTorch
+• <span class="dimmed-text">Data & Viz:</span> NumPy, pandas, Recharts, Three.js, React Three Fiber, Leaflet, Framer Motion, Lenis
 • <span class="dimmed-text">Databases & Tools:</span> PostgreSQL, MySQL, MongoDB, SQLite, SQLAlchemy, Git, GitHub, pytest, VS Code, Antigravity, Codex, Claude Code
       `,
 
@@ -457,10 +457,11 @@
    - Stack: React, Vite, Anthropic Claude API, Recharts, Speech APIs.
    - Live URL: <a href="https://gov-platform.vercel.app/" target="_blank" class="detail-link">https://gov-platform.vercel.app/</a>
    - GitHub: <a href="https://github.com/rokey6950-cell/gov-platform" target="_blank" class="detail-link">github.com/rokey6950-cell/gov-platform</a>
-3. <span class="term-code">TechVriksh Platform</span>
-   - Student tech community platform with 3D interactive hub & event pipelines.
-   - Stack: Next.js 16, TypeScript, Tailwind CSS, Three.js, React Three Fiber, Lenis.
+3. <span class="term-code">TechVriksh Platform</span> [Lead Platform & Operations]
+   - Community engine & 3D WebGL portal empowering 1,000+ builders across 18 states.
+   - Stack: Next.js 16, TypeScript, Perplexity AI SDK, Three.js, React Three Fiber, Leaflet, Lenis, GSAP.
    - Live URL: <a href="https://techvriksh.vercel.app/" target="_blank" class="detail-link">https://techvriksh.vercel.app/</a>
+   - GitHub: <a href="https://github.com/rokey6950-cell/Tech-Vriksh" target="_blank" class="detail-link">github.com/rokey6950-cell/Tech-Vriksh</a>
       `,
 
       sih: () => `
@@ -472,10 +473,14 @@
       `,
 
       techvriksh: () => `
-<span class="accent-text">TechVriksh | Full-Stack Developer:</span>
+<span class="accent-text">TechVriksh | Tech & Operations Lead:</span>
+• <span class="dimmed-text">Scale:</span> 1,000+ Community Members across 18 Indian States
+• <span class="dimmed-text">Host Venues:</span> OpsTree Global (Noida), Unstop Office (Saket, New Delhi)
 • <span class="dimmed-text">Live Platform:</span> <a href="https://techvriksh.vercel.app/" target="_blank" class="detail-link">https://techvriksh.vercel.app/</a>
-• Built and refined community, team, and event-related interfaces with Next.js 16, TypeScript, and Tailwind CSS.
-• Developed backend modules for applications, hackathon events, admin workflows, authentication, contact submissions, and transactional email systems.
+• <span class="dimmed-text">GitHub Repo:</span> <a href="https://github.com/rokey6950-cell/Tech-Vriksh" target="_blank" class="detail-link">github.com/rokey6950-cell/Tech-Vriksh</a>
+• Lead platform architecture, WebGL 3D spatial camera corridor (Three.js/R3F), and Lenis smooth momentum scrolling.
+• Integrated web-grounded community intelligence with the official Perplexity AI SDK (/api/agent) and an interactive Leaflet India choropleth map.
+• Oversee technical infrastructure and operations for 15+ workshops, bootcamps, and hackathons.
       `,
 
       contact: () => `

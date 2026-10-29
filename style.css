@@ -2588,6 +2588,44 @@ img {
   display: block;
 }
 
+.modal-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+}
+
+.modal-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #34d399;
+}
+
+.modal-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-sub);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 640px) {
+  .modal-stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .techvriksh-arch-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
